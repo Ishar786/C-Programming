@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void) 
+{
+    
+    int num1, rem, rev=0;
+    printf("reverse of a 5 digit number\n");
+    printf("---------------------------------------------\n");
+    printf("enter the 5 digit no: ");
+    scanf("%d", &num1);
+    rem = num1%10;
+    rev = rev + rem*10000;
+    num1 = num1/10;
+    rem = num1%10;
+    rev = rev + rem*1000;
+    num1 = num1/10;
+    rem = num1%10;
+    rev = rev + rem*100;
+    num1 = num1/10;
+    rem = num1%10;
+    rev = rev + rem*10;
+    num1 = num1/10;
+    rem = num1%10;
+    rev = rev + rem*1;
+    num1 = num1/10;
+    
+    printf("\nthe reverse of a number is\n");
+    printf("%d", rev);
+    // Write C code here
+    
+printf("\n\nSheik Ishar");
+    return 0;
+    
+}

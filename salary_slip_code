@@ -1,0 +1,35 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   float basic, DA, HRA, ESIC, pf, nbt, TDS, gross;
+   const int conveyance = 1600, medical = 1250;
+   printf("enter the basic salary: ");
+   scanf("%f", &basic);
+   DA = basic*0.1;
+   HRA = basic*0.5+DA;
+   gross = basic+DA+HRA+conveyance+medical;
+   ESIC = gross*0.0475;
+   pf = basic*0.12;
+   nbt = gross-ESIC-pf;
+   TDS = nbt*0.05;
+   printf("DA\t\t\t\t        %.0f\n", DA);
+   printf("HRA\t\t\t            %.0f\n", HRA);
+   printf("conveyance\t\t\t    %d\n", conveyance);
+   printf("medical\t\t\t\t\t%d\n", medical);
+   
+   printf("gross\t\t\t\t\t%.0f\n", gross);
+   printf("\n");
+   printf("ESIC\t\t\t\t\t%.0f\n", ESIC);
+   printf("provident fund\t\t\t%.0f\n", pf);
+   printf("net before tax\t\t\t%.0f\n", nbt);
+   printf("\n");
+   printf("TDS\t\t\t\t\t\t%.0f\n", TDS);
+   printf("\n");
+   printf("salary in hand\t\t\t%.0f\n", nbt-TDS);
+    
+   
+    printf("\n\nSheik Ishar");
+    return 0;
+}

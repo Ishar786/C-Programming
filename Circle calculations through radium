@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    float r, d, circum, area;
+    const float pi = 3.142;
+    printf("circle calculations\n");
+    printf("-------------------------------------\n");
+    
+   printf("enetr the radius: ");
+   scanf("%f", &r);
+   d = r*2;
+   circum = 2*pi*r;
+   area = pi*r*r;
+   printf("the diameter of a circle is = %4.2f\n", d);
+   printf("the circumference of a circle is = %4.2f\n", circum);
+   printf("the area of a circle is = %.2f\n", area);
+    printf("\n\nSheik Ishar");
+    return 0;
+}

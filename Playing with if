@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a;
+    printf("enter a number ");
+    scanf("%d", &a);
+    if (a>100 && a%2==0)
+    {
+        printf("%d is greater than 100 and even", a);
+    }
+    else if (a<100 && a%2==0)
+    {
+        printf("%d is less than 100 and even", a);
+    }
+    else if (a==100)
+    {
+        printf("%d is equal to 100", a);
+    }
+    else
+    {
+        printf("%d is odd", a);
+    }
+printf("\n\n");
+printf("Sheik Ishar");
+    return 0;
+}

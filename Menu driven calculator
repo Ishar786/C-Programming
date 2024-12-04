@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a, b, choice;
+    printf("enter a: ");
+    scanf("%d", &a);
+    printf("enter b: ");
+    scanf("%d", &b);
+    printf("select a choice\n\n");
+    printf("1 : add\n");
+    printf("2 : subtract\n");
+    printf("3 : multiply\n");
+    printf("4 : divide\n");
+    printf("select a number from the above options: ");
+    scanf("%d", &choice);
+    if (choice==1)
+    {
+        printf("the sum is %d\n", a+b);
+    }
+    else if (choice==2)
+    {
+        printf("the subtraction is %d\n", a-b);
+    }
+    else if (choice==3)
+    {
+        printf("the multiplication is %d\n", a*b);
+    }
+    else if (choice==4)
+    {
+        printf("the qotient is %d\n", a/b);
+        printf("the remainder is %d\n", a%b);
+    }
+    else
+    {
+        printf("end");
+    }
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

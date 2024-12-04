@@ -39,3 +39,46 @@ int main()
     printf("Sheik Ishar");
     return 0;
 }
+
+
+/*// Online C compiler to run C program online
+  //menu calculator using switch case
+#include <stdio.h>
+
+int main() 
+{
+    float a, b;
+    int choice;
+    printf("enter a: ");
+    scanf("%f", &a);
+    printf("enter b: ");
+    scanf("%f", &b);
+    printf("select a choice\n\n");
+    printf("1 : add\n");
+    printf("2 : subtract\n");
+    printf("3 : multiply\n");
+    printf("4 : divide\n");
+    printf("select a number from the above options: ");
+    scanf("%d", &choice);
+    switch (choice)
+    {
+        case 1:
+        printf("the addition is %f", a+b);
+        break;
+        case 2:
+        printf("the subtraction is %f", a-b);
+        break;
+        case 3:
+        printf("the product is %f", a*b);
+        break;
+        case 4:
+        printf("the division is %f", a/b);
+        break;
+        default:
+        printf("please select number from the above menu");
+        break;
+    }
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}*/

@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    int num, square;
+    printf("enter the num: ");
+    scanf("%d", &num);
+    while(num!=0)
+    {
+        square = pow(num, 2);
+        printf("the square of the %d is: %d", num, square);
+        printf("\n\n enter another num: ");
+        scanf("%d", &num);
+    }
+    
+    
+    
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

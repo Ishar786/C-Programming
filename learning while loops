@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    int num=0, sum=0, max;
+    printf("enter the max: ");
+    scanf("%d", &max);
+    while(num<=max)
+    {
+        if(num%2==0)
+        {
+            sum = sum + num;
+            printf("\n%d\t|\tsum = %d", num, sum);
+        }
+        
+        num++;
+    }
+    
+    
+    
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

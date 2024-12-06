@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    int i, score=0, total=0, rohith=0, kohli=0;
+    for (i=0;i<6;i++)
+    {
+       printf("enter the %d ball score: ", i+1);
+       scanf("%d", &score);
+       if(total%2==0)
+       {
+           rohith = rohith + score;
+           printf("Rohith = %d\n", rohith);
+           printf("Kohli = %d\n", kohli);
+       }
+       else
+       {
+           kohli = kohli + score;
+           printf("Rohith = %d\n", rohith);
+           printf("Kohli = %d\n", kohli);
+       }
+       total = score + total;
+       printf("the total is %d\n", total);
+       printf("\n");
+        
+    }
+    //printf("the total is %d", total);
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    float i;
+    for (i=1;i<1.02;i=i+(i*0.01))
+    {
+       printf("%4.2f\n", pow(i,365));
+        
+    }
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

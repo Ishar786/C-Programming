@@ -1,0 +1,46 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    int balance = 10000, transaction_amount=0, choice=0;
+    printf("ATM cash withdrawl\n\n");
+    printf("\n1: withdraw | 2: exit\n");
+    printf("enter your choice: ");
+    scanf("%d", &choice);
+    do 
+    {
+        switch(choice)
+        {
+            case 1:
+            printf("your current balance is %d\n", balance);
+            printf("enter withdrawl amount: ");
+            scanf("%d", &transaction_amount);
+            if (transaction_amount<=balance)
+            {
+                balance = balance - transaction_amount;
+                printf("collect your cash\n\n");
+                printf("updated balance is %d\n", balance);
+            }    
+            else
+            {
+                printf("Insufficied balance\n\n");
+            }
+            
+            break;
+            case 2:
+                printf("\nthank you....visit again\n");
+                break;
+            default:
+                printf("invalid choice");
+                break;
+        }
+        printf("1: continue | 2: exit\n");
+        printf("do you want to continue: ");
+        scanf("%d", &choice);
+    } while (choice!=2);
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

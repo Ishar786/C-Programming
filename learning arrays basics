@@ -1,0 +1,29 @@
+// Online C compiler to run arrays program online
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    int i;
+    int arrint[6] = {12,20,90,96,97,98};
+    float arrfloat[6] = {31.9,67.8,76.5,9.7,6.54,4.1};
+    char arrchar[6] = {'B', 'H', 'A', 'R', 'A', 'T'};
+    for(i=0;i<6;i++)
+    {
+        printf("[%d] | %d\n",i+1 , arrint[i]);
+    }
+    printf("\n\n");
+    for(i=0;i<6;i++)
+    {
+        printf("[%d] | %0.2f\n", i+1, arrfloat[i]);
+    }
+    printf("\n\n");
+    for(i=0;i<6;i++)
+    {
+        printf("[%d] | %c\n", i+1, arrchar[i]);
+    }
+    
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

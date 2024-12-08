@@ -1,0 +1,85 @@
+// Online C compiler to run arrays program online
+#include <stdio.h>
+#include<math.h>
+
+int main() 
+{
+    int i, size=5;
+    int arrnum[5];
+    int min, max, sum, avg, choice;
+    printf("enter 5 elements: \n\n");
+    for(i=0;i<5;i++)
+    {
+        printf("\n[%d]: ", i+1);
+        scanf("%d", &arrnum[i]);
+    }
+    printf("\n\n");
+    do
+    {
+        printf("\nyour values are.....\n\n");
+        for(i=0;i<5;i++)
+        {
+            printf("[%d] | %d\n",i+1 , arrnum[i]);
+        }
+        printf("\n\n");
+        printf("\nmenu options\n");
+        printf("1: min\n2: max\n3: sum\n4:average\n5: exit");
+        printf("\nenter your choice: ");
+        scanf("%d", &choice);
+        printf("\n");
+        switch(choice)
+        {
+            case 1:
+                min = arrnum[0];
+                for(i=1;i<5;i++)
+                {
+                    if(arrnum[i]<min)
+                    {
+                        min = arrnum[i];
+                    }
+                }
+                printf("\nResult | min = %d", min);
+                break;
+            case 2:
+                max = arrnum[0];
+                for(i=1;i<5;i++)
+                {
+                    if(arrnum[i]>max)
+                    {
+                        max = arrnum[i];
+                    }
+                }
+                printf("\nResult | max = %d", max);
+                break;
+            case 3:
+                sum = arrnum[0];
+                for(i=1;i<5;i++)
+                {
+                    sum = arrnum[i] + sum;
+                }
+                printf("\nResult | sum = %d", sum);
+                break;
+            case 4:
+                sum = arrnum[0];
+                for(i=1;i<5;i++)
+                {
+                    sum = arrnum[i] + sum;
+                }
+                avg = sum/5;
+                printf("\nResult | average = %d", avg);
+                break;
+            case 5:
+                printf("\nThank You.....");
+                break;
+            default:
+                printf("\ninvalid input.....try again");
+                break;
+                
+        }
+        
+    }while(choice!=5);
+    
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

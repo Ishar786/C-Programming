@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    int i, j, arrnum[2][3];
+    for (i=0;i<2;i++)
+    {
+        for (j=0;j<3;j++)
+        {
+            printf("enter [%d][%d]: ", i, j);
+            scanf("%d", &arrnum[i][j]);
+        }
+    }
+    printf("the 2d array is.........\n\n");
+    for(i=0;i<2;i++)
+    {
+        for (j=0;j<3;j++)
+        {
+            printf("%d ", arrnum[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

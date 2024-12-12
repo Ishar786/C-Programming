@@ -44,7 +44,7 @@ int main()
         if (arrmarks[i][0]>temp)
         {
             temp = arrmarks[i][0];
-            indext = i;
+            indext = i+1;
         }
     }
     printf("Best in Theory                                       subject %d\n", indext);
@@ -54,7 +54,7 @@ int main()
         if (arrmarks[i][1]>temp)
         {
             temp = arrmarks[i][1];
-            indexv = i;
+            indexv = i+1;
         }
     }
     printf("Best in viva                                         subject %d\n", indexv);
@@ -64,7 +64,7 @@ int main()
         if (arrmarks[i][2]>temp)
         {
             temp = arrmarks[i][2];
-            indexl = i;
+            indexl = i+1;
         }
     }
     printf("Best in practical                                       subject %d\n", indexl);

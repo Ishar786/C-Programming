@@ -5,7 +5,9 @@ int main()
 {
     printf("\t\tBharath Acharya\n");
     printf("...............................\n");
-    int i,j, arrmarks[6][4] = {47,7,5,0,53,6,10,0,69,8,7,0,48,9,8,0,55,5,6,0,46,7,6,0}, temp=0;
+    int i,j, arrmarks[6][4] = {47,7,5,0,53,6,10,0,69,8,7,0,48,9,8,0,55,5,6,0,46,7,6,0}, temp=0, total=0;
+    float percentage;
+    int indext=0, indexv=0, indexl=0, indexo=0;
     for (i=0;i<6;i++)
     {
         temp = 0;
@@ -34,6 +36,38 @@ int main()
         printf("\n");
     }
     printf("..................................................................\n");
+    printf("Total                                                       %3d\n", arrmarks[1][3]+arrmarks[2][3]+arrmarks[3][3]+arrmarks[4][3]+arrmarks[5][3]+arrmarks[0][3]);
+    printf("percentage                                                 %3d%%\n", (arrmarks[1][3]+arrmarks[2][3]+arrmarks[3][3]+arrmarks[4][3]+arrmarks[5][3]+arrmarks[0][3])/6);
+    temp =0;
+    for (i=0;i<6;i++)
+    {
+        if (arrmarks[i][0]>temp)
+        {
+            temp = arrmarks[i][0];
+            indext = i;
+        }
+    }
+    printf("Best in Theory                                       subject %d\n", indext);
+    temp=0;
+    for (i=0;i<6;i++)
+    {
+        if (arrmarks[i][1]>temp)
+        {
+            temp = arrmarks[i][1];
+            indexv = i;
+        }
+    }
+    printf("Best in viva                                         subject %d\n", indexv);
+    temp=0;
+    for (i=0;i<6;i++)
+    {
+        if (arrmarks[i][2]>temp)
+        {
+            temp = arrmarks[i][2];
+            indexl = i;
+        }
+    }
+    printf("Best in practical                                       subject %d\n", indexl);
     
     
     printf("\n\n");

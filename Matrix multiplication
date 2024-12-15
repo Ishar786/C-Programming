@@ -1,0 +1,88 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#define max 10
+
+int main(void)
+{
+    int a[max][max], b[max][max], c[max][max];
+    int arows, acols, brows, bcols, crows, ccols;
+    int i,j,k,temp;
+    printf("enter sixe of matrix A: \n");
+    printf("Rows: ");
+    scanf("%d", &arows);
+    printf("Columns: ");
+    scanf("%d", &acols);
+    printf("enter sixe of matrix B: \n");
+    brows = acols;
+    printf("Rows: %d\n", brows);
+    printf("Columns: ");
+    scanf("%d", &bcols);
+    crows = arows;
+    ccols = bcols;
+    printf("enter elements of the matrix A\n");
+    for (i=0;i<arows;i++)
+    {
+        for (j=0;j<acols;j++)
+        {
+            printf("[%d][%d]: ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("enter elements of the matrix B\n");
+    for (i=0;i<brows;i++)
+    {
+        for (j=0;j<bcols;j++)
+        {
+            printf("[%d][%d]: ", i, j);
+            scanf("%d", &b[i][j]);
+        }
+        printf("\n");
+    }
+    for (i=0;i<crows;i++)
+    {
+        for (j=0;j<ccols;j++)
+        {
+            c[i][j] = 0;
+            for (k=0;k<acols;k++)
+            {
+                c[i][j] = c[i][j] + a[i][k]*b[k][j];
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    printf("the martices are as follows.....\n");
+    printf("Matrix A\n");
+    for (i=0;i<arows;i++)
+    {
+        for (j=0;j<acols;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("Matrix B\n");
+    for (i=0;i<brows;i++)
+    {
+        for (j=0;j<bcols;j++)
+        {
+            printf("%d\t",b[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("Matrix C\n");
+    for (i=0;i<crows;i++)
+    {
+        for (j=0;j<ccols;j++)
+        {
+             printf("%d\t", c[i][j]);   
+        }
+        printf("\n");
+    }
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

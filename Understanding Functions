@@ -1,0 +1,73 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int max(int, int, int);
+int min(int, int, int);
+int sum(int, int, int);
+float avg(float, float, float);
+
+int main(void)
+{
+    int a,b,c,x;
+    float fresult;
+    printf("please enter 3 numbers\n");
+    printf("a: ");
+    scanf("%d", &a);
+    printf("b: ");
+    scanf("%d", &b);
+    printf("c: ");
+    scanf("%d", &c);
+    x = max(a,b,c);
+    printf("\nmax = %d", x);
+    x = min(a,b,c);
+    printf("\nmin = %d", x);
+    x = sum(a,b,c);
+    printf("\nsum = %d", x);
+    fresult = avg(a,b,c);
+    printf("\navg = %0.2f", fresult);
+    
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}
+
+int max(int a, int b, int c)
+{
+    int result;
+    result = a;
+    if (b>result)
+    {
+        result = b;
+    }
+    if (c>result)
+    {
+        result = c;
+    }
+    return result; 
+}
+int min(int a, int b, int c)
+{
+    int result;
+    result = a;
+    if (b<result)
+    {
+        result = b;
+    }
+    if (c<result)
+    {
+        result = c;
+    }
+    return result; 
+}
+int sum(int a, int b, int c)
+{
+    int result;
+    result = a + b + c;
+    return result; 
+}
+float avg(float a, float b, float c)
+{
+    float result;
+    result = a + b + c;
+    result = result/3;
+    return result; 
+}

@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main(void) 
+{
+    int i,j,k,temp;
+    char a;
+    printf("enter a character: ");
+    scanf("%c", &a);
+    printf("your entered character is %c\n", a);
+    printf("ASCII value is %d\n", a);
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}

@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void display_characters(char, int);
+
+int main(void) 
+{
+    int i,j,k,temp;
+    display_characters('a', 26);
+    display_characters('A', 26);
+    display_characters('0', 10);
+    printf("\n\n");
+    printf("Sheik Ishar");
+    return 0;
+}
+void display_characters(char la, int lcount)
+{
+    for (int i=0;i<lcount;i++)
+    {
+        printf("%c = %d\n", la, la);
+        la++;
+    }
+    printf("\n");
+}
